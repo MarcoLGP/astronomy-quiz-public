@@ -1,0 +1,195 @@
+.home_header_container {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    align-self: center;
+    margin-right: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #24263A;
+}
+
+.home_header_content_container {
+    height: 62px;
+    width: 95%;
+    color: #fff;
+    font-family: LouisGeorgeCafe;
+}
+
+.home_header_user_name_font {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 25px;
+    width: auto;
+    max-width: 19vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.home_header_saudation_user_font {
+    font-size: 20px;
+}
+
+.home_header_user_menu_container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+    background-color: #1D1E2C;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+.home_header_star_icons_container {
+    margin-top: 5px;
+    min-width: 45px;
+}
+
+.home_header_star_icon {
+    color: #FFDC5D;
+    font-size: 22px;
+}
+
+.home_header_mobile_menu_icon_container {
+    background-color: #171825;
+    margin-top: 8px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.home_nav_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home_nav_title_font {
+    font-family: AlteHaasGrotesk;
+    letter-spacing: 0.1px;
+    cursor: default;
+    margin: 15px 0px 15px 30px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.home_nav_title_container {
+    height: 70px;
+    width: 88%;
+    align-self: center;
+    border-bottom: solid 2px #1D1E2C;
+}
+
+.home_nav_border_divisor_top {
+    width: 85%;
+    border-bottom: solid 2px #1D1E2C;
+    align-self: center;
+}
+
+.home_nav_border_divisor_bottom {
+    width: 89%;
+    border-bottom: solid 2px #1D1E2C;
+    align-self: center;
+    margin: 10px
+}
+
+.home_nav_icon_container {
+    color: #fff;
+    font-family: LouisGeorgeCafe;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+
+@keyframes slide-vertical {
+    0% {
+        transform: translateY(-30px);
+    }
+}
+
+.home_header_mobile_menu_container {
+    display: none;
+    margin-left: 12px;
+}
+
+.home_header_mobile_menu_options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    animation: slide-vertical 0.8s;
+    background-color: #171825;
+    padding: 9px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.home_nav_font_menu {
+    margin-left: 10px;
+}
+
+.home_nav_icon {
+    margin-top: 5px;
+    height: 30px;
+}
+
+.home_nav_selected {
+    background-color: #171825;
+    transition: 0.2s;
+}
+
+.home_nav_icon_container:hover {
+    background-color: #171825;
+    transition: 0.3s;
+}
+
+@media (max-width: 1750px) {
+    .home_header_container {
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 1550px) {
+    .home_header_container {
+        margin-left: 3%;
+    }
+}
+
+@media (max-width: 730px) {
+    .home_header_mobile_menu_container {
+        display: block;
+    }
+}
+
+@media (max-width: 428px) {
+    .home_header_star_icon {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 408px) {
+    .home_header_saudation_user_font {
+        display: none;
+    }
+
+    .home_header_user_menu_info {
+        flex-direction: row-reverse;
+    }
+
+    .home_header_star_icons_container {
+        width: 100%;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 354px) {
+    .home_header_star_icons_container {
+        width: fit-content;
+    }
+
+    .home_header_user_menu_container {
+        margin-left: 0px;
+    }
+}

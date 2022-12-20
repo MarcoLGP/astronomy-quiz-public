@@ -1,0 +1,104 @@
+.questions_title_container {
+    width: 90%;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questions_title_font {
+    composes: challenge_title_font from "./Challenge.module.css";
+    margin-top: 12px;
+}
+
+.questions_title_line_divisor {
+    composes: challenge_title_line_divisor from "./Challenge.module.css";
+}
+
+.questions_total_percentage_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions_total_progress {
+    width: 150px;
+}
+
+.questions_content {
+    composes: challenge_content from "./Challenge.module.css";
+    width: 90%;
+}
+
+.questions_content_title_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.questions_content_subtitle_font_time_left {
+    color: #525675;
+    font-weight: 600;
+    margin-right: 10px;
+    font-family: MavenPro-Regular;
+    font-size: 18px;
+}
+
+.questions_content_subtitle_font_questions_left {
+    color: #525675;
+    font-weight: 600;
+    margin-right: 10px;
+    font-family: MavenPro-Regular;
+    font-size: 18px;
+}
+
+.questions_content_font {
+    composes: challenge_content_font from "./Challenge.module.css";
+    margin-top: 20px;
+}
+
+.handle_alternative_container {
+    border: 2px solid #494E68;
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.handle_alternative_container_selected {
+    border-color: #03CBD2;
+}
+
+.handle_alternative_container:hover {
+    border-color: #03CBD2;
+}
+
+.handle_alternative_icon_unselected {
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    border: solid 2px #494E68
+}
+
+.handle_alternative_content_font {
+    margin-left: 13px;
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+.questions_footer_container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.handle_alternative_icon_container {
+    min-width: 20px;
+}
+
+@media (max-width: 444px) {
+    .questions_content_subtitle_font_time_left {
+        display: none;
+    }
+}

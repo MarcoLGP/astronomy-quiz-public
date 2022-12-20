@@ -1,0 +1,85 @@
+.box_sign_social_sign_line_container {
+    margin-top: 25px;
+}
+
+.box_sign_social_sign_line {
+    height: 2px;
+    width: 23%;
+    background-color: rgb(194, 193, 193);
+}
+
+.box_sign_with_social_font {
+    font-family: AlteHaasGrotesk;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin: 0px 15px 2px 15px;
+    color: rgb(128, 128, 128);
+}
+
+.box_sign_social_buttons_container {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.box_sign_form_forgot_pass_font:hover {
+    text-decoration: underline;
+}
+
+.box_sign_social_button_google {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #da3a22;
+}
+
+.box_sign_social_button_linkedin {
+    composes: box_sign_social_button_google;
+    border-radius: 5px;
+    background-color: #0A66C2;
+}
+
+.box_sign_social_button_github {
+    composes: box_sign_social_button_google;
+    background-color: black;
+}
+
+.box_sign_social_button_linkedin> :first-child,
+.box_sign_social_button_google> :first-child {
+    margin-left: 8px;
+}
+
+.box_sign_social_button_linkedin> :last-child,
+.box_sign_social_button_google> :last-child {
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+@keyframes slide-vertical {
+    0% {
+        transform: translateY(-30px);
+    }
+}
+
+.alert_on_valid_fail_container {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    animation: slide-vertical 0.8s;
+    border: 1px solid #FFCCC7;
+    background-color: #FFF2F0;
+}
+
+.alert_on_valid_fail_container p {
+    margin-left: 10px;
+}
+
+.alert_on_valid_success_container {
+    composes: alert_on_valid_fail_container;
+    background-color: #F6FFED;
+    border: 1px solid #B7EB8F;
+}

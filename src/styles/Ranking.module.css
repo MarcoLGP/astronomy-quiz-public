@@ -1,0 +1,116 @@
+.home_ranking_container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 15px;
+    background-color: #2D314B;
+    height: 460px;
+    width: 650px;
+}
+
+.home_ranking_box_container {
+    padding: 15px 25px;
+    height: 100%;
+}
+
+.home_ranking_box_title {
+    font-weight: 400;
+}
+
+.home_ranking_box_filter_container {
+    background-color: #1D1E2C;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+    margin-bottom: 7px;
+}
+
+.home_ranking_box_filter_font {
+    padding-right: 10px;
+}
+
+.home_ranking_box_title_container {
+    border-bottom: 2px solid #1D1E2C;
+    padding-bottom: 7px;
+}
+
+.home_ranking_list_handle_user_container {
+    margin-bottom: 15px;
+    background-color: #1D1E2C;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.home_ranking_list_handle_user_avatar_container {
+    min-width: auto;
+}
+
+.home_rankink_list_users_container {
+    margin-top: 20px;
+    max-height: 350px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.home_rankink_list_users_container:hover {
+    overflow-y: scroll;
+    padding-right: 15px;
+}
+
+.home_rankink_list_users_container::-webkit-scrollbar {
+    width: 8px;
+    background-color: #2D314B;
+}
+
+.home_rankink_list_users_container::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+}
+
+.home_ranking_list_handle_user_name_font {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 80%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 934px) {
+    .home_ranking_container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 880px) {
+    .home_ranking_container {
+        width: 550px;
+    }
+}
+
+@media (max-width: 828px) {
+    .home_ranking_container {
+        width: 500px;
+    }
+}
+
+@media (max-width: 770px) {
+    .home_ranking_container {
+        width: 450px;
+    }
+}
+
+@media (max-width: 458px) {
+    .home_ranking_container {
+        width: 380px;
+    }
+}
+
+@media (max-width: 410px) {
+    .home_ranking_container {
+        width: 340px;
+    }
+}

@@ -1,0 +1,58 @@
+.box_end_title_container {
+    width: 95%;
+    margin-top: 10px
+}
+
+.box_end_title_font {
+    font-size: 25px;
+    margin-left: 5px;
+    font-family: LouisGeorgeCafe;
+    font-weight: 600;
+}
+
+.box_end_title_divisor {
+    composes: challenge_title_line_divisor from "./Challenge.module.css";
+}
+
+.end_box_content_container {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.end_box_content_score_font {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.box_end_footer_container {
+    height: 70px;
+    width: 95%;
+}
+
+.box_end_footer_menu_btn {
+    composes: challenge_footer_right_button from "./Challenge.module.css";
+    width: 100px;
+    background-color: rgb(245, 33, 33);
+}
+
+.box_end_footer_next_challenge_btn {
+    composes: challenge_footer_right_button from "./Challenge.module.css";
+    width: 200px;
+}
+
+.loading_result_end_container {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 344px) {
+    .box_end_footer_next_challenge_btn {
+        width: 170px;
+    }
+}

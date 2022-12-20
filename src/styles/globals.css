@@ -1,0 +1,176 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PLZ";
+  src: url(../../assets/fonts/PLZ.ttf);
+}
+
+@font-face {
+  font-family: "BP-replay";
+  src: url(../../assets/fonts/BPreplayExtended.otf);
+}
+
+@font-face {
+  font-family: "LouisGeorgeCafe";
+  src: url(../../assets/fonts/LouisGeorgeCafe.ttf);
+}
+
+@font-face {
+  font-family: "Now-Bold";
+  src: url(../../assets/fonts/Now-Bold.otf);
+}
+
+@font-face {
+  font-family: "AlteHaasGrotesk";
+  src: url(../../assets/fonts/Alte-Haas-Grotesk.ttf);
+}
+
+@font-face {
+  font-family: "Agnella";
+  src: url(../../assets/fonts/Agnella-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Vazir_Medium";
+  src: url(../../assets/fonts/Vazir-Medium.ttf);
+}
+
+@font-face {
+  font-family: "SF_Arborcrest_Heavy";
+  src: url(../../assets/fonts/SF-Arborcrest-Heavy.ttf);
+}
+
+@font-face {
+  font-family: "MavenPro-Regular";
+  src: url(../../assets/fonts/MavenPro-Regular.ttf);
+}
+
+.sign_app_layout {
+  display: grid;
+  background-color: black;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "sign_header"
+    "sign_main"
+    "sign_footer";
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #171825;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+}
+
+.sign_app_layout header {
+  grid-area: sign_header;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.sign_app_layout main {
+  grid-area: sign_main;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url(../../assets/images/2401680\(1\).jpg) no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_app_layout footer {
+  grid-area: sign_footer;
+}
+
+.home_app_container {
+  display: flex;
+  position: absolute;
+  min-height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_app_layout {
+  min-height: 100vh;
+  background-color: #171825;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "home_aside home_header"
+    "home_aside home_main"
+}
+
+.home_app_layout header {
+  grid-area: home_header;
+  display: flex;
+  justify-content: center;
+}
+
+.home_app_layout aside {
+  grid-area: home_aside;
+  width: 255px;
+  background-color: #24263A;
+  border-top-right-radius: 15px;
+}
+
+.home_app_layout main {
+  grid-area: home_main;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 86vh;
+}
+
+.home_app_layout nav {
+  margin-top: 10px;
+  margin-left: 12px;
+  padding-bottom: 15px;
+}
+
+.challenge_app_container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  background-color: #171825;
+}
+
+@media (max-width: 730px) {
+
+  .home_app_layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "home_header"
+      "home_main"
+  }
+
+  .home_app_layout aside {
+    display: none;
+  }
+}
