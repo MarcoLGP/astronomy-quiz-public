@@ -1,4 +1,4 @@
-<h1 align="center">Astronomy quiz (Api)</h1>
+<h1 align="center">Astronomy Quiz</h1>
 
 <p align="center">
     <img src="./assets/images/astronomy-quiz-homescreen.png" width="1200" height="450">
