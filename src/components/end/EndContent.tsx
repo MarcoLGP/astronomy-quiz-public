@@ -36,22 +36,23 @@ export default function EndContent() {
         } else {
             const checkResultInstance = new CheckResult(questionsSelecteds);
             checkResultInstance.checkAlternatives();
-            checkResultInstance.checkResult().then((result_res: checkResultOutput) => {
-                if (result_res.result && (user.level === challengeNumber) && (user.level !== 3)) {
-                    const encrypted_id = new Cryptography().encrypt(user.id);
-                    axios.post("/updateLevelUser", { id: encrypted_id })
-                        .then((res: AxiosResponse) => {
-                            switch (res.status) {
-                                case 200:
-                                    dispatch(clearQuestions());
-                                    dispatch(updateLevelUser(user.level + 1));
-                                    localStorage.setItem("token", res.data.token);
-                                    break;
-                            }
-                        });
-                }
-                setResult(result_res);
-            });
+            checkResultInstance.checkResult()
+                .then((result_res: checkResultOutput) => {
+                    if (result_res.result && (user.level === challengeNumber) && (user.level !== 3)) {
+                        const encrypted_id = new Cryptography().encrypt(user.id);
+                        axios.post("/updateLevelUser", { id: encrypted_id })
+                            .then((res: AxiosResponse) => {
+                                switch (res.status) {
+                                    case 200:
+                                        dispatch(updateLevelUser(user.level + 1));
+                                        localStorage.setItem("token", res.data.token);
+                                        break;
+                                }
+                            });
+                    }
+                    dispatch(clearQuestions());
+                    setResult(result_res);
+                });
         }
     }, []);
 
